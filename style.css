@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    background: url("https://images.unsplash.com/photo-1686331073732-1da5fcb018f8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxpZ2h0JTIwYmx1ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+body{
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 1rem;
+    box-shadow: 0 0 10px black;
+}
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width: 50%;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    border-radius: 30px;
+    transform-origin: 100%;
+    transform: rotate(90deg);    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.0, 0.7, 1);
+}
+
+.hour-hand{
+    width: 25%;
+    background-color: navy;
+    left: 25%;
+}
+
+.min-hand{
+    width: 40%;
+    background-color: darkgreen;
+    left: 10%;
+}
+
+.second-hand{
+    background-color: black;
+    transform: rotate(20deg);
+
+}
